@@ -1,22 +1,30 @@
 :root {
-    background-color:black;
+    background-color:rgb(250, 244, 237);
     font-family: "Poppins", sans-serif;
 }
 body {
-    background: black;
+    
     font-family: "Poppins", sans-serif;
     margin:auto auto;
 }
 a {
-    color: blue;
+    color: rgb(87, 82, 121);
     font-size:24px;
+    text-decoration:none;
+    transition-duration:250ms;
+}
+a:hover {
+    background-color: rgb(250, 244, 237);
+    border-radius:3px;
+    
 }
 .container {
-    border:1px black solid;
-    background-color: gray;
+   
+    background-color: rgb(242, 233, 222);
     display:grid;
-    justify-content: space-around;
-    width:300px;
+    
+    
+    width:200px;
     margin:auto auto;
     padding:10px;
     border-radius:15px;
@@ -26,7 +34,8 @@ a {
 }
 .iconContainer {
     display:inline-block;
-    justify-content: space-around;
+    text-align:center;
+    
     box-sizing:border-box;
     flex-wrap: wrap;
     margin: 0;
@@ -34,7 +43,8 @@ a {
 }
 .linkIcon {
     position:relative;
-    top:10px;
-    width:40px;
+    top:7px;
+    
+    width:30px;
     
 }
