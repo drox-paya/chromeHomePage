@@ -1,36 +1,81 @@
+
+
 :root {
-    background-color:rgb(250, 244, 237);
+    
     font-family: "Poppins", sans-serif;
+   
+}
+.darkModeBG {
+    background-color: rgb(35, 33, 54);
+}
+.lightModeBG {
+    background-color:rgb(250, 244, 237);
+}
+.darkModeElement {
+    background-color: rgb(42, 39, 63);
+    
+}
+
+.lightModeElement {
+    background-color: rgb(242, 233, 222);
+    
+}
+.lightModeText {
+    color: rgb(224, 222, 244);
+}
+.lightModeText:hover{
+    background-color: rgb(250, 244, 237);
+}
+.darkModeText {
+    color: rgb(87, 82, 121);
+}
+.darkModeText:hover {
+    background-color: rgb(38, 35, 58);
+    color: rgb(62, 143, 176);
 }
 body {
-    
+    display:flex;
     font-family: "Poppins", sans-serif;
     margin:auto auto;
 }
+.themeSelector {
+    height:10%;
+}
+.dayNight {
+    display:flex;
+    width:40px;
+}
+.dayNightButton{
+    background-color:transparent;
+    border:0;
+}
 a {
-    color: rgb(87, 82, 121);
+    
+    display:inline-block;
+
+    padding:0 5px;
     font-size:24px;
     text-decoration:none;
     transition-duration:250ms;
 }
 a:hover {
-    background-color: rgb(250, 244, 237);
+    
     border-radius:3px;
     
 }
 .container {
    
-    background-color: rgb(242, 233, 222);
+    
     display:grid;
     
-    
-    width:200px;
+    min-width:200px;
+    max-width:400px;
     margin:auto auto;
     padding:10px;
     border-radius:15px;
     position:relative;
     flex-wrap: wrap;
-    
+    margin-top:0;
 }
 .iconContainer {
     display:inline-block;
