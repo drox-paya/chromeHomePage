@@ -5,38 +5,30 @@
     font-family: "Poppins", sans-serif;
    
 }
-.darkModeBG {
-    background-color: rgb(35, 33, 54);
+[data-theme="dark"] {
+    --background: rgb(35, 33, 54);
+    --element:rgb(42, 39, 63);
+    --element-hover:rgb(38, 35, 58);
+    --text: rgb(87, 82, 121);
+    --text-hover: rgb(62, 143, 176);
 }
-.lightModeBG {
-    background-color:rgb(250, 244, 237);
+[data-theme="light"] {
+    --background:rgb(250, 244, 237);
+    --element: rgb(242, 233, 222);
+    --element-hover: rgb(250, 244, 237);
+    --text: rgb(87, 82, 121);
+    --text-hover: rgb(40, 105, 131);
 }
-.darkModeElement {
-    background-color: rgb(42, 39, 63);
-    
+embed {
+    pointer-events: none;
 }
 
-.lightModeElement {
-    background-color: rgb(242, 233, 222);
-    
-}
-.lightModeText {
-    color: rgb(224, 222, 244);
-}
-.lightModeText:hover{
-    background-color: rgb(250, 244, 237);
-}
-.darkModeText {
-    color: rgb(87, 82, 121);
-}
-.darkModeText:hover {
-    background-color: rgb(38, 35, 58);
-    color: rgb(62, 143, 176);
-}
 body {
     display:flex;
     font-family: "Poppins", sans-serif;
     margin:auto auto;
+    background-color: var(--background);
+    transition-duration:250ms;
 }
 .themeSelector {
     height:10%;
@@ -56,22 +48,25 @@ body {
 a {
     
     display:inline-block;
-
+    
+    background-color: var(--element);
+    color: var(--text);
     padding:0 5px;
     font-size:24px;
     text-decoration:none;
     transition-duration:250ms;
 }
 a:hover {
-    
+    background-color:var(--element-hover);
     border-radius:3px;
+    color: var(--text-hover)
     
 }
 .container {
    
-    
+    transition-duration:250ms;
     display:grid;
-    
+    background-color: var(--element);
     min-width:200px;
     max-width:400px;
     margin:auto auto;

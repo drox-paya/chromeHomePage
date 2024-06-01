@@ -4,6 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
+    
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,31 +19,36 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
-    <body class="darkModeBG">
-        <div class="themeSelector">
-            <button class="dayNightButton"><embed class="dayNight" src="data\moon-stars-svgrepo-com.svg"></button>
+    <body id="bodyTheme" data-theme="dark">
+        <script>
+            theme = getTheme();
+            bodyTheme = document.getElementById("bodyTheme");
+            bodyTheme.setAttribute("data-theme", theme);
+        </script>
+        <div class="themeSelector" >
+            <button class="dayNightButton" ><embed class="dayNight dayNightButton" src="data\moon-stars-svgrepo-com.svg"></button>
         </div>
-        <div class="container darkModeElement">
+        <div class="container">
             <div class="iconContainer">
                 <img class="linkIcon" src="https://beepisla.github.io/demo-crosshair-code/favicon.png">
-                <a class="darkModeText" href="https://beepisla.github.io/demo-crosshair-code/">Xhair Getter!</a>
+                <a href="https://beepisla.github.io/demo-crosshair-code/">Xhair Getter!</a>
             </div>
         
             <div class="iconContainer">
                 <img class="linkIcon" src="https://www.google.com/s2/favicons?sz=256&domain_url=https%3A%2F%2Fyoutube.com">
-                <a class="darkModeText" href="https://youtube.com.au">YouTube</a>
+                <a href="https://youtube.com.au">YouTube</a>
             </div>
             <div class="iconContainer">
                 <img class="linkIcon" src="https://fe-app.pracc.com/4f3ba90fad324d89dd2489c010c6afb93041628b/static/media/betalogo.a588fd02da84cdcdd54c.png">
-                <a class="darkModeText" href="https://pracc.com/matches">PRACC</a>
+                <a href="https://pracc.com/matches">PRACC</a>
             </div>
             <div class="iconContainer">
                 <img class="linkIcon" src="https://cs2browser.com/static/img/logo.png">
-                <a class="darkModeText" href="https://cs2browser.com/?regions=oc">CSBrowser</a>
+                <a href="https://cs2browser.com/?regions=oc">CSBrowser</a>
             </div>
             <div class="iconContainer">
                 <img class="linkIcon" src="https://www.csgonades.com/favicon/favicon-32x32.png">
-                <a class="darkModeText" href="https://www.csgonades.com/">CSNades</a>
+                <a href="https://www.csgonades.com/">CSNades</a>
             </div>
             <form action="http://google.com/search" target="_blank">
                 <input name="q" class="search" placeholder="Search">
