@@ -13,6 +13,15 @@ function getTheme() {
     return currentTheme;
 }
 
+function getLinksFromStorage() {
+    
+    
+}
+function addNewLink () {
+
+}
+
+
 document.addEventListener("DOMContentLoaded", function(){
     
     console.log("DOM Loaded");
